@@ -1,0 +1,14 @@
+class Solution:
+    def smallestnum (self,N):
+        # code here 
+        s=str(N)
+        l=list(s)
+        l.sort()
+        m=""
+        n=""
+        for i in l:
+            if i==str(0):
+                m+=str(i)
+            else:
+                n+=str(i)
+        return(n[0]+m+n[1:])
